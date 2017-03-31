@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Documentation - Insurance</title>
+    <meta name="description" content="Au theme template">
+    <meta name="keywords" content="Au theme template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Styles-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,500,700,800,600,300" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!--Theme style-->
+    <link href="css/main.css" rel="stylesheet">
+    <!-- Javascript-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/layout.js"></script>
+    <script type="text/javascript" src="vendor/syntaxhighlighter/scripts/shCore.js"></script>
+    <script type="text/javascript" src="vendor/syntaxhighlighter/scripts/shBrushJScript.js"></script>
+    <script type="text/javascript" src="vendor/syntaxhighlighter/scripts/shBrushCss.js"></script>
+    <script type="text/javascript" src="vendor/syntaxhighlighter/scripts/shBrushPlain.js"></script>
+    <script type="text/javascript" src="vendor/syntaxhighlighter/scripts/shBrushXml.js"></script>
+    <link type="text/css" rel="stylesheet" href="vendor/syntaxhighlighter/styles/shCoreDefault.css">
+    <script>
+        SyntaxHighlighter.all();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="header-wrapper">
+            <div class="container text-center">
+                <a id="logo" href="#">
+                    <img rel="Highend" src="img/logo.png">
+                </a>
+                <strong>Version:</strong>
+                <span>1.0 |</span>
+                <strong>Last update:</strong>
+                <span>28 February 2017</span>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <ul class="docs-nav">
+            <li>
+                <strong>Introduction</strong>
+            </li>
+            <li>
+                <a class="cc-active active" href="#getting-started">Getting Started</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#html-structure">HTML Structure</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#logo-settings">Logo</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#chaning-fonts">Fonts</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#sliders">Sliders</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#helpers">Helper Classes</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#contact">Gmap</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#grid">Grid</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#browser-support">Browser Support</a>
+            </li>
+            <li>
+                <a class="cc-active" href="#credits">Source & Credits</a>
+            </li>
+        </ul>
+        <div class="docs-content">
+            <div class="docs-content-inner">
+                <section id="getting-started">
+                    <h1>Introduction</h1>
+                    <p>Thank you for purchasing Insurance template!</p>
+                    <p>
+                        This documentation will give you an understanding of how Insurance is structured and guide you in performing common functions. 
+                    </p>
+                    <p>If you need custom customization, please contact us from here:
+                        <a href="https://themeforest.net/user/smilethemes">https://themeforest.net/user/smilethemes</a>
+                    </p>
+                    <p>Thank you so much!</p>
+                    <p>AU CREATIVE</p>
+                    <p>&nbsp;</p>
+                    <h1 id="Installation">Getting Started</h1>
+                    <h4>What&apos;s Included</h4>
+                    <p>Once you have download the package you will see the following folder structure in &quot;
+                        <strong>template</strong>&quot; Folder</p>
+                    <div id="default-tree">
+                        <ul>
+                            <li>
+                                <strong>css</strong>- Main Stylesheet Files</li>
+                            <li>
+                                <strong>img</strong>- Images Files</li>
+                            <li>
+                                <strong>js</strong>- Javacripts Folder</li>
+                            <li>
+                                <strong>vendor</strong>- Vendor Files (jquery, bootstrap etc)</li>
+                        </ul>
+                    </div>
+                    <p>In order to use in your website, you need to upload template files (
+                        <strong>inside the folder www</strong>) to your web server with the help of one of the FTP-clients (for example, WinSCP or Total Commander etc).</p>
+                </section>
+                <section id="html-structure">
+                    <h1>HTML Structure</h1>
+                    <p>Insurance template is based on Bootstrap Framework (
+                        <a href="http://getbootstrap.com/">http://getbootstrap.com/</a>) Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web.</p>
+                    <p>Below is a sample coding structure:</p>
+                    <pre class="brush: html;">&lt;!DOCTYPE html&gt;
+
+&lt;html lang="en-US"&gt;
+
+&lt;head&gt;
+<!-- Page meta, page css, page js files, page title etc... -->
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    <!-- HEADER -->
+    <header>
+
+        ...
+
+    </header>
+    <!-- END: HEADER -->
+
+    <!-- SECTION -->
+    <section>
+            <div class="container">
+
+                ...
+
+            </div>
+    </section>
+    <!-- END: SECTION -->
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="main-footer">
+            <div class="container">
+
+                ...
+
+            </div>
+        </div>
+        <div class="sub-footer">
+            <div class="container">
+
+                ...
+
+            </div>
+        </div>
+    </footer>
+    <!-- END: FOOTER -->
+
+
+  &lt;/body&gt;
+
+&lt;/html&gt;
+</pre>
+                </section>
+                <section id="logo-settings">
+                    <h1>Logo Settings</h1>
+                    <p>Default site logo is placed inside<code>header</code> container.</p>
+                    <pre class="brush: html;"><!--HEADER-->
+<header class="">
+
+    <!--HEADER MAIN-->
+    <div class="header-main">
+
+        <div class="container">
+
+            <!--LOGO-->
+            <div class="logo">
+                <a href="index.html">
+                    <img class="img-responsive" src="img/icons/logo.png" alt="Logo">
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+</pre>
+                </section>
+                <section id="chaning-fonts">
+                    <h1>Changing Fonts</h1>
+                    <p>By default Insurance Template uses Two fonts from google library:<code>Open Sans</code> and<code>Raleway</code> from the
+                        <a target="_blank" href="http://www.google.com/fonts">Google Fonts Library</a>
+                    </p>
+                    <p>If you wish to add/change the site fonts, please take a look in the<code>head</code> part of the website and you will find this tag:</p>
+                    <pre class="brush: html"><!-- LOAD GOOGLE FONTS -->
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,800,700,600|Raleway:100,300,600,700,800" rel="stylesheet" type="text/css"></pre>
+                    <p>To include new font you can simply add another line like this:</p>
+                    <pre class="brush: html"><!-- LOAD GOOGLE FONTS -->
+<link href="http://fonts.googleapis.com/css?family=Lato:400,300,800,700,600" rel="stylesheet" type="text/css"></pre>
+                    <p>Or add an<code>|</code> seperator and paste<code>Lato:400,300,800,700,600</code> after default website fonts link.</p>
+                </section>
+                <section id="sliders">
+                    <h1>Sliders</h1>
+                    <p>Insurance includes 5 different sliders that gives you all the options they need.
+                        <ul>
+                            <li>
+                                <strong>Revolution Slider:</strong>
+                                <span>is an awesome animated slider that creates eye-catching sliders.</span>
+                            </li>
+                            <li>
+                                <strong>Owl Slider:</strong>
+                                <span>Is an touch enabled jQuery plugin that lets you create beautiful responsive carousel slider.</span>
+                            </li>
+                            <li>
+                                <strong>Insurance Owl Slider:</strong>
+                                <span>is an elegant slider perfect for large images and subtle animated titles and captions.</span>
+                            </li>
+                        </ul>
+                    </p>
+                    <br/>
+                    <br/>
+                    <h4>Revolution Slider</h4>
+                    <p>Please find the full online documentation of Revolution Slider
+                        <a href="http://www.themepunch.com/revsliderjquery-doc/slider-revolution-jquery-5-x-documentation/" target="_blank">here</a>
+                    </p>
+                    <br/>
+                    <br/>
+                    <h4>Owl Slider</h4>
+                    <p>This excellent carousel slider can be controled usuing HTML5 data attirbutes, see the full list below:
+                        <ul>
+                            <li><code>data-col-lg</code> - The columns in large desktop screen size, default value is 1 columns</li>
+                            <li><code>data-col-md</code> - The columns in laptop screen size, default value is 1 columns</li>
+                            <li><code>data-col-sm</code> - The columns in tablet screen size, default value is 1 columns</li>
+                            <li><code>data-col-xs</code> - The columns in mobile screen size, default value is 1 columns</li>
+                            <li><code>data-items</code> - Set size items for slider</li>
+                            <li><code>data-dots</code> - Add dots container class for custom dots</li>
+                            <li><code>data-center</code> - Center slider, default value
+                                <strong>"false"</strong>
+                            </li>
+                        </ul>
+                    </p>
+                    <p>Advanced customization of file<code>owl-custom.js</code>
+                    </p>
+                    <p>The full documentation of OWl Slider can be found
+                        <a href="http://www.owlcarousel.owlgraphic.com/docs/started-welcome.html" target="_blank">here</a>
+                    </p>
+                </section>
+                <section id="helpers">
+                    <h1>Helpers</h1>
+                    <br/>
+                    <p>Insurance helper css classes allow you to build your custom layout without touching any CSS code</p>
+                    <p>These classes are generic helper classes predifined in the CSS of pages, here is quick view what they can do</p>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-condensed table-striped">
+                            <thead>
+                                <tr>
+                                    <th colspan="2">Class</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>.show</code>
+                                    </td>
+                                    <td>display: block !important;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.hidden</code>
+                                    </td>
+                                    <td>display: none !important;</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.hidden-desktop-up</code>
+                                    </td>
+                                    <td>display: none; on destop up</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.hidden-lg-tablet</code>
+                                    </td>
+                                    <td>display: none; on large tablet</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.hidden-md-tablet</code>
+                                    </td>
+                                    <td>display: none; on medium tablet</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.hidden-sm-tablet</code>
+                                    </td>
+                                    <td>display: none; on small tablet</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.hidden-md-phone</code>
+                                    </td>
+                                    <td>display: none; on medium phone</td>
+                                </tr>
+                                <tr>
+                                    <td><code>.hidden-sm-phone</code>
+                                    </td>
+                                    <td>display: none; on small phone</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section id="contact">
+                    <h1>Google Maps</h1>
+                    <br/>
+                    <p>You can create unlimited contact maps in your website. Simply by using HTML5 data attirbutes, follow list below:
+                        <ul>
+                            <li><code>data-map-x</code> - Add location number x</li>
+                            <li><code>data-map-y</code> - Add location number y</li>
+                            <li><code>data-scrollwhell</code> default false</li>
+                            <li><code>data-draggable</code> default false</li>
+                            <li><code>data-pin</code> We have created six markers for your website. If you wish your custom image marker you can do that, just by placing your custom marker url in<code>data-pin</code>
+                            </li>
+                            <p>An example, how to create Google Maps inside your website:</p>
+                        </ul>
+                    </p>
+                    <pre class="brush: html"><!-- Google map sensor -->
+<script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=false"></script>
+
+<div id="google_map" data-map-x="37.3863866" data-map-y="-122.0576091" data-pin="img/icons/location.png" data-scrollwhell="0" data-draggable="1" class="google-map"></div></pre>
+                    <p>
+                        <labe class="label label-danger">Note:</labe>You need always to include Google map sensor link in your page<code>head</code> or before your placed map. you can set the<code>sensor</code> parameter to<code>true</code> or<code>false</code> to detect the user's location.
+                    </p>
+                </section>
+                <section id="grid">
+                    <h1>Grid</h1>
+                    <p>Bootstrap grid includes a responsive, mobile first fluid grid system that appropriately scales up to 12 columns as the device or viewport size increases. It includes predefined classes for easy layout options, as well as powerful mixins
+                        for generating more semantic layouts</p>
+                    <p>Grid systems are used for creating page layouts through a series of rows and columns that house your content. Here's how the Bootstrap grid system works:</p>
+                    <ul>
+                        <li>You must start with<code>row</code>
+                        </li>
+                        <li>There are pre-define classes of columns starting from 1 to 12, example<code>col-md-1</code> to<code>col-md-12</code>
+                        </li>
+                        <li>Each of these value represent a percentage of the screen, 1 being the smallest and 12 being 100%</li>
+                        <li>You can create different grid pattern that finally forms 12</li>
+                    </ul>
+                    <p>For more information about Bootstrap, visit:
+                        <a href="http://getbootstrap.com/">http://getbootstrap.com/</a>
+                    </p>
+                    <p>example :</p>
+                    <pre class="brush: html;"><div class="row">
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+    <div class="col-md-1">.col-md-1</div>
+</div>
+
+<div class="row">
+    <div class="col-md-8">.col-md-8</div>
+    <div class="col-md-4">.col-md-4</div>
+</div>
+
+<div class="row">
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+    <div class="col-md-4">.col-md-4</div>
+</div>
+
+<div class="row">
+    <div class="col-md-6">.col-md-6</div>
+    <div class="col-md-6">.col-md-6</div>
+</div></pre>
+                    <br/>
+                    <p></p>
+                    <span class="label label-danger">Note</span>Bootstrap includes different grids for different screen sizes, "col-md" md stands for medium screen, the following table explains:
+                    <div class="table-responsive"></div>
+                    <table class="table table-bordered table-striped"></table>
+                    <thead></thead>
+                    <tr></tr>
+                    <th></th>
+                    <th></th>Extra small devices
+                    <small>Phones (
+                        <768px)</small>
+                            <th></th>Small devices
+                            <small>Tablets (≥768px)</small>
+                            <th></th>Medium devices
+                            <small>Desktops (≥992px)</small>
+                            <th></th>Large devices
+                            <small>Desktops (≥1200px)</small>
+                            <tbody></tbody>
+                            <tr></tr>
+                            <th class="text-nowrap">Grid behavior</th>
+                            <td>Horizontal at all times</td>
+                            <td colspan="3">Collapsed to start, horizontal above breakpoints</td>
+                            <tr></tr>
+                            <th class="text-nowrap">Container width</th>
+                            <td>None (auto)</td>
+                            <td>750px</td>
+                            <td>970px</td>
+                            <td>1170px</td>
+                            <tr></tr>
+                            <th class="text-nowrap">Class prefix</th>
+                            <td></td><code>.col-xs-</code>
+                            <td></td><code>.col-sm-</code>
+                            <td></td><code>.col-md-</code>
+                            <td></td><code>.col-lg-</code>
+                            <tr></tr>
+                            <th class="text-nowrap"># of columns</th>
+                            <td colspan="4">12</td>
+                            <tr></tr>
+                            <th class="text-nowrap">Column width</th>
+                            <td class="text-muted">Auto</td>
+                            <td>~62px</td>
+                            <td>~81px</td>
+                            <td>~97px</td>
+                            <tr></tr>
+                            <th class="text-nowrap">Gutter width</th>
+                            <td colspan="4">30px (15px on each side of a column)</td>
+                            <tr></tr>
+                            <th class="text-nowrap">Nestable</th>
+                            <td colspan="4">Yes</td>
+                            <tr></tr>
+                            <th class="text-nowrap">Offsets</th>
+                            <td colspan="4">Yes</td>
+                            <tr></tr>
+                            <th class="text-nowrap">Column ordering</th>
+                            <td colspan="4">Yes</td>
+                </section>
+                <section id="browser-support">
+                    <h1>Browser Support</h1>
+                    <p>Insurance is built keeping mind to support a wide range of browsers and devices. We all major browers Google Chrome, Mozilla Firefox, Safari, Opera, Internet Explorer 9 and Above</p>
+                    <p></p>
+                    <br/>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-striped table-condensed">
+                            <thead>
+                                <tr>
+                                    <td></td>
+                                    <th>Chrome</th>
+                                    <th>Firefox</th>
+                                    <th>Internet Explorer</th>
+                                    <th>Opera</th>
+                                    <th>Safari</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Android</th>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-muted" rowspan="3" style="vertical-align: middle;">N/A</td>
+                                    <td class="text-danger">
+                                        <span class="glyphicon glyphicon-remove"></span>Not Supported</td>
+                                    <td class="text-muted">N/A</td>
+                                </tr>
+                                <tr>
+                                    <th>iOS</th>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-muted">N/A</td>
+                                    <td class="text-danger">
+                                        <span class="glyphicon glyphicon-remove"></span>Not Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                </tr>
+                                <tr>
+                                    <th>Mac OS X</th>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                </tr>
+                                <tr>
+                                    <th>Windows</th>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-success">
+                                        <span class="glyphicon glyphicon-ok"></span>Supported</td>
+                                    <td class="text-danger">
+                                        <span class="glyphicon glyphicon-remove"></span>Not Supported</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section id="credits">
+                    <h1>Source & Credits</h1>
+                    <p>All images are only for demonstration purpose, however you can re-download them in sites below. Almost all (not including overclothing.com, Daniel Zenda, Freepik etc...) images are released free of copyrights under Creative Commons
+                        CC0.</p>
+                    <br/>
+                    <br/>
+                    <h4>Images & Mockups</h4>
+                    <ul>
+                        <li>All Free Stocks
+                            <a target="_blank" href="allthefreestock.com">http://allthefreestock.com</a>
+                        </li>
+                        <li>Pexels
+                            <a target="_blank" href="https://www.pexels.com/">https://www.pexels.com/</a>
+                        </li>
+                        <li>Pixabay
+                            <a target="_blank" href="http://pixabay.com">http://pixabay.com</a>
+                        </li>
+                        <li>picjumbo
+                            <a target="_blank" href="http://picjumbo.com">http://picjumbo.com</a>
+                        </li>
+                        <li>Freepik
+                            <a target="_blank" href="http://freepik.com">http://freepik.com</a>
+                        </li>
+                    </ul>
+                    <br/>
+                    <br/>
+                    <h4>Scripts</h4>
+                    <ul>
+                        <li>Revolution Slider
+                            <a target="_blank" href="http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848">http://codecanyon.net/item/slider-revolution-responsive-jquery-plugin/2580848</a>- (Premium - Incuded with template, free license using inside Insurance Template)</li>
+                        <li>Isotope
+                            <a target="_blank" href="http://isotope.metafizzy.co">http://isotope.metafizzy.co</a>
+                        </li>
+                        <li>jQuery
+                            <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a>
+                        </li>
+                        <li>Owl Carousel v2
+                            <a target="_blank" href="http://www.owlcarousel.owlgraphic.com/">http://www.owlcarousel.owlgraphic.com/</a>
+                        </li>
+                        <li>Jquery MMenu
+                            <a target="_blank" href="http://mmenu.frebsite.nl/">http://mmenu.frebsite.nl/</a>
+                        </li>
+                        <li>jquery-accordion
+                            <a target="_blank" href="https://vctrfrnndz.github.io/jquery-accordion/">https://vctrfrnndz.github.io/jquery-accordion/</a>
+                        </li>
+                        <li>jQuery
+                            <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a>
+                        </li>
+                        <li>Match height
+                            <a target="_blank" href="http://brm.io/jquery-match-height/">http://brm.io/jquery-match-height/</a>
+                        </li>
+                        <li>Couter Up & Waypoits
+                            <a target="_blank" href="https://github.com/ciromattia/jquery.counterup">https://github.com/ciromattia/jquery.counterup</a>
+                        </li>
+                    </ul>
+                    <br/>
+                    <br/>
+                    <h4>CSS & Fonts</h4>
+                    <ul>
+                        <li>Bootstrap Framework
+                            <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a>
+                        </li>
+                        <li>Animation
+                            <a target="_blank" href="http://daneden.github.io/animate.css/">http://daneden.github.io/animate.css/</a>
+                        </li>
+                        <li>Font Awesome
+                            <a target="_blank" href="http://fortawesome.github.io/Font-Awesome/">http://fortawesome.github.io/Font-Awesome/</a>
+                        </li>
+                        <li>Google Fonts
+                            <a target="_blank" href="https://www.google.com/fonts">https://www.google.com/fonts</a>
+                        </li>
+                        <li>Linearicons
+                            <a target="_blank" href="https://linearicons.com/free">https://linearicons.com/free</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
